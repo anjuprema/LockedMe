@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 
 public class LockedMeMain {
 	public static String rootPath = System.getProperty("user.home");
-	public static String destnPath = rootPath + "\\LockedMeCred\\";
+	public static String destnPath = rootPath + "/LockedMeCred/";
 	public static String userDB = destnPath + "userDB.txt";
 	public static String SEPARATOR = "%%%";
 	public static String USERNAME = null;
