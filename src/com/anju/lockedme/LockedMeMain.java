@@ -74,19 +74,19 @@ public class LockedMeMain {
 		String Upswd = sc.nextLine();
 		if (!validateUnamePswd(Uname)) {
 			System.err.println("Cannot register. Not a valid User Name.");
-			processMainMenuOption(mainOpt);
+			registerUser(mainOpt);
 			return;
 		} else {
 			if (!validateUnamePswd(Upswd)) {
 				System.err.println("Cannot register. Not a valid Password");
-				processMainMenuOption(mainOpt);
+				registerUser(mainOpt);
 				return;
 			}
 		}
 		/* check if user name already exists */
 		if (isUserAlreadyExist(Uname)) {
 			System.err.println("Sorry! Cannot Register. User Name Already exists. ");
-			processMainMenuOption(mainOpt);
+			registerUser(mainOpt);
 			return;
 		}
 		/* if all ok, register user */
